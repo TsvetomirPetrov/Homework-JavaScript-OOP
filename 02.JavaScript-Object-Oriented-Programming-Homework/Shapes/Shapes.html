@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Some Shapes</title>
+    <script src="Shapes.js"></script>
+</head>
+<body>
+<canvas id="shapesContainer" width="500px" height="400px">
+</canvas>
+<script>
+    var rectangle = new Shapes.Rectangle(0, 1, "#000000", 20, 71);
+    rectangle.draw();
+    var triangle = new Shapes.Triangle(140, 6, "#ff0000", 9, 29, 29, 9);
+    triangle.draw();
+    var segment = new Shapes.Segment(6, 140, "#f00000", 42, 54);
+    segment.draw();
+    var point = new Shapes.Point(200, 200, "#ff0000");
+    point.draw();
+</script>
+</body>
+</html>
